@@ -1,7 +1,7 @@
 use agro_alliance;
 
 -- Insertar datos en la tabla "finca"
-INSERT INTO finca (nombreFinca, ubicacion, propietario) VALUES
+INSERT INTO finca (nombre_finca, ubicacion, propietario) VALUES
 ('Finca Los Pinos', 'Zona Norte, Colombia', 'Carlos Ruiz'),
 ('Finca El Eden', 'Zona Sur, Colombia', 'Juan Pérez'),
 ('Finca La Esperanza', 'Zona Este, Colombia', 'María López'),
@@ -14,7 +14,7 @@ INSERT INTO finca (nombreFinca, ubicacion, propietario) VALUES
 ('Finca La Montaña', 'Zona Norte, Colombia', 'Gabriel Vargas');
 
 -- Insertar datos en la tabla "actividad_agronomica"
-INSERT INTO actividad_agronomica (fecha, tipoActividad, insumosUtilizados, duracion) VALUES
+INSERT INTO actividad_agronomica (fecha, tipo_actividad, insumos_utilizados, duracion) VALUES
 ('2025-01-10', 'Siembra', 'Fertilizante, Semillas', '5 horas'),
 ('2025-01-12', 'Riego', 'Agua', '3 horas'),
 ('2025-01-15', 'Fertilización', 'Fertilizante', '4 horas'),
@@ -27,7 +27,7 @@ INSERT INTO actividad_agronomica (fecha, tipoActividad, insumosUtilizados, durac
 ('2025-02-15', 'Plaguicida', 'Plaguicida', '2 horas');
 
 -- Insertar datos en la tabla "insumo"
-INSERT INTO insumo (nombreInsumo, tipoInsumo, descripcion, idActividadAgronomica) VALUES
+INSERT INTO insumo (nombre_insumo, tipo_insumo, descripcion, id_actividad_agronomica) VALUES
 ('Fertilizante', 'Químico', 'Fertilizante nitrogenado', '1'),
 ('Semillas', 'Biológico', 'Semillas de maíz', '1'),
 ('Agua', 'Natural', 'Agua para riego', '2'),
@@ -50,7 +50,7 @@ INSERT INTO insumo (nombreInsumo, tipoInsumo, descripcion, idActividadAgronomica
 ('Tractor', 'Maquinaria', 'Tractor para corte', '16');
 
 -- Insertar datos en la tabla "parcela"
-INSERT INTO parcela (latitud, longitud, tamano, tipoCultivo) VALUES
+INSERT INTO parcela (latitud, longitud, tamano, tipo_cultivo) VALUES
 ('4.653', '-74.134', '10 hectáreas', 'Maíz'),
 ('4.654', '-74.136', '12 hectáreas', 'Arroz'),
 ('4.655', '-74.138', '15 hectáreas', 'Frijoles'),
